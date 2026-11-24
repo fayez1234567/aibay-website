@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# Preview hosting should not compete with the production domain in search.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
